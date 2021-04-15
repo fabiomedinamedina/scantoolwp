@@ -36,7 +36,7 @@ function menu_stwp() {
         'manage_options',
         'stwp',                                                     // Slug 
         '', 
-        'dashicons-code-standards',                                 // Icono
+        STWP_PLUGIN_URL.'/img/icon-stwp-dashboard.png',               // Icono
         2                                                           // Posición en el menú
     );
     // Menú item Dashboard

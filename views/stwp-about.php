@@ -20,6 +20,9 @@
                      <a href="https://www.facebook.com/nativapps" target="_blank"><span class="dashicons dashicons-facebook"></span></a>
                      <a href="https://www.instagram.com/nativapps/" target="_blank"><span class="dashicons dashicons-instagram"></span></a>
                      <a href="https://www.linkedin.com/company/nativapps-inc/" target="_blank"><span class="dashicons dashicons-linkedin"></span></a>
+                     <div class="logos">
+                        <img src="<?php echo STWP_PLUGIN_URL ?>img/nativapps-fabiomedina.png" />
+                     </div>
                     </div>
                     </div> <!-- .inside Info Plugin -->
                 </div> <!-- .postbox Información plugin -->
