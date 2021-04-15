@@ -1,3 +1,23 @@
+/*
+    Project: Scan Tool WP
+    Description: Prueba técnica NativApps
+    Develop: Fabio Medina Medina
+    Develop URI: http://www.fabiomedina.com
+    Location: Tunja, Colombia
+    ------ COLORS ------
+    orange: #EF891B;
+    green-c: #004D90;
+    red-e: #002950;
+    green: #38EF7D;
+    gray: #8A8A8A;
+*/
+:root{
+    --orange: #EF891B;
+    --green-c: #98FB98;
+    --red-e: #FF6347;
+    --green: #38EF7D;
+    --gray: #222;
+}
 .stwp-version{
     font-size:12px;
     margin-left:7px
@@ -6,8 +26,8 @@
     font-weight: bold;
 }
 .contenedor-plugins .plugin.activo{
-    background: #98FB98;
+    background: var(--green-c);
 }
 .contenedor-plugins .plugin.inactivo{
-    background: #FF6347;
+    background: var(--red-e);
 }

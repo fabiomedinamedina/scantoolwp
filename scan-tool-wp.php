@@ -67,7 +67,9 @@ function view_dashboard() {
 }
 // Llamo el archivo de la vista de la página About
 function view_about() {
-    echo '<h1>Este es el submenú</h1>';
+    if ( is_file( plugin_dir_path( __FILE__ ) . 'views/stwp-about.php' ) ) {
+        include_once plugin_dir_path( __FILE__ ) . 'views/stwp-about.php';
+    }
 }
 
 

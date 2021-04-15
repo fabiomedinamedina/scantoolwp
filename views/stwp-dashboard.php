@@ -1,6 +1,6 @@
 <div class="wrap">
 <div id="icon-upload" class="icon32"></div>
-<h2><?php _e( 'Scan Tool WP', 'scan-tool-wp' ); ?><span class="stwp-version"> Versión <?php global $stwp_plugin_version; global $stwp_plugin_author; echo $stwp_plugin_version.' - '. $stwp_plugin_author; ?></span></h2>
+<h2><?php _e( 'Scan Tool WP - Dashboard', 'scan-tool-wp' ); ?><span class="stwp-version"> Versión <?php global $stwp_plugin_version; global $stwp_plugin_author; echo $stwp_plugin_version.' - '. $stwp_plugin_author; ?></span></h2>
 <div id="poststuff">
     <div id="post-body" class="metabox-holder columns-2">
         <!-- Contenido principal -->
@@ -74,7 +74,6 @@
                                 if ( 'post' === $post_type ) {
                                     _e( sprintf( __( '<p>Número de blogs publicados: <strong>%s</strong></p>', 'scan-tool-wp' ), $num_posts->publish));
                                 } else {
-                                    /* translators: %s: Number of pages. */
                                     _e( sprintf( __( '<p>Número de páginas publicadas: <strong>%s</strong></p>', 'scan-tool-wp' ), $num_posts->publish));
                                 }
                             }
