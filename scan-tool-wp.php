@@ -24,6 +24,7 @@ define( 'STWP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );		    // Defino URL del 
 add_action( 'admin_enqueue_scripts', 'stwp_admin_css' );
 function stwp_admin_css() {
     wp_enqueue_style( 'stwp-admin', STWP_PLUGIN_URL . 'css/stwp-admin.css' );
+    wp_enqueue_style( 'stwp-font', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 }
 
 // Creo el menú en el administrador de wordpress

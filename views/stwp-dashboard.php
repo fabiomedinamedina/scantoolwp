@@ -1,12 +1,12 @@
-<div class="wrap">
+<div class="wrap stwp-contenedor">
 <div id="icon-upload" class="icon32"></div>
-<h2><?php _e( 'Scan Tool WP - Dashboard', 'scan-tool-wp' ); ?><span class="stwp-version"> Versión <?php global $stwp_plugin_version; global $stwp_plugin_author; echo $stwp_plugin_version.' - '. $stwp_plugin_author; ?></span></h2>
+<h2 class="titulo-pagina"><?php _e( 'Scan Tool WP - Dashboard', 'scan-tool-wp' ); ?><span class="stwp-version"> Versión <?php global $stwp_plugin_version; global $stwp_plugin_author; echo $stwp_plugin_version.' - '. $stwp_plugin_author; ?></span></h2>
 <div id="poststuff">
     <div id="post-body" class="metabox-holder columns-2">
         <!-- Contenido principal -->
         <div id="post-body-content">
             <div id="plugins-themes" class="meta-box-sortables ui-sortable">
-                <div class="postbox">
+                <div class="postbox caja-stwp">
                     <h3><span><?php _e( 'Temas', 'scan-tool-wp' ); ?></span></h3>
                     <div class="inside">
                     <?php
@@ -30,7 +30,7 @@
                         ?>
                     </div> <!-- .inside Themes -->
                 </div> <!-- .postbox Themes -->
-                <div class="postbox">
+                <div class="postbox caja-stwp caja-plugins">
                     <h3><span><?php _e( 'Plugins', 'scan-tool-wp' ); ?></span></h3>
                     <div class="inside">
                         <?php
@@ -47,7 +47,8 @@
                                     //echo 'Plugin inactive '.$plugin['Name'].'';
                                     //echo '</br>';
                                 }
-                                $html_plugin .= sprintf('<p>%s</p>',$plugin['Name']);
+                                $html_plugin .= sprintf('<p class="titulo-plugin">%s</p>',$plugin['Name']);
+                                $html_plugin .= sprintf( __( '<span>Versión %s | Por %s</span>', 'scan-tool-wp' ), $plugin['Version'], $plugin['Author']);
                                 $html_plugin .= '</div>';
                             }
                             $html_plugin .= '</div>';
@@ -60,7 +61,7 @@
         <!-- Sidebar info adicional -->
         <div id="postbox-container-1" class="postbox-container">
             <div class="meta-box-sortables">
-                <div class="postbox">
+                <div class="postbox caja-stwp info-sitio">
                     <h3><span><?php _e( 'Información del sitio', 'svg-support' ); ?></span></h3>
                     <div class="inside">
                         <p><?php _e( sprintf( __( 'Nombre del sitio web:</br> <strong>%s - %s</strong>', 'scan-tool-wp' ), get_bloginfo( 'name' ), get_bloginfo( 'description' ))); ?></p>
