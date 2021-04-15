@@ -1,0 +1,13 @@
+.stwp-version{
+    font-size:12px;
+    margin-left:7px
+}
+.contenedor-temas .tema.activo p{
+    font-weight: bold;
+}
+.contenedor-plugins .plugin.activo{
+    background: #98FB98;
+}
+.contenedor-plugins .plugin.inactivo{
+    background: #FF6347;
+}
