@@ -12,16 +12,13 @@
                     <?php
                         $tema_activo = get_stylesheet();
                         $temas = wp_get_themes( );
-                        //var_dump($themes);
                         $html_temas = '<div class="contenedor-temas">';
                         foreach($temas as $key => $tema){
+                            $clase_activo = '';
                             if ($key == $tema_activo){
-                                $html_temas .= '<div class="tema activo">';
-                                //echo 'Activo '.$value['Name'].'';
-                            }else{
-                                $html_temas .= '<div class="tema">';
-                                //echo $value['Name'];
+                                $clase_activo = 'tema-activo';
                             }
+                            $html_temas .= '<div class="tema '.$clase_activo.'">';
                             $html_temas .= sprintf('<p>%s</p>', $tema['Name']);
                             $html_temas .= '</div>';
                         }
@@ -38,15 +35,12 @@
                             $html_plugin = '<div class="contenedor-plugins">';
                             foreach($plugins as $key => $plugin){
                                 if (is_plugin_active($key)){
-                                    $html_plugin .= '<div class="plugin activo">';
-                                    //echo 'Plugin active '.$plugin['Name'].'';
-                                    //echo '</br>';
+                                    $clase_plugin = 'activo'; 
                                 }
                                 if (is_plugin_inactive($key)){
-                                    $html_plugin .= '<div class="plugin inactivo">';
-                                    //echo 'Plugin inactive '.$plugin['Name'].'';
-                                    //echo '</br>';
+                                    $clase_plugin = 'inactivo';
                                 }
+                                $html_plugin .= '<div class="plugin '.$clase_plugin.'">';
                                 $html_plugin .= sprintf('<p class="titulo-plugin">%s</p>',$plugin['Name']);
                                 $html_plugin .= sprintf( __( '<span>Versión %s | Por %s</span>', 'scan-tool-wp' ), $plugin['Version'], $plugin['Author']);
                                 $html_plugin .= '</div>';

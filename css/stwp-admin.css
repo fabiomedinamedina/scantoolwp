@@ -82,7 +82,7 @@
     padding-bottom: 0;
     border-bottom: 0;
 }
-.contenedor-temas .tema.activo p{
+.contenedor-temas .tema.tema-activo p{
     font-weight: var(--f-bold);
     margin: 0;
 }
